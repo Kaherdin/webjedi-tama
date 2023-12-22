@@ -8,6 +8,7 @@ import {
   useToastController,
   XStack,
   YStack,
+  Card,
 } from '@my/ui'
 import { ChevronDown, ChevronUp } from '@tamagui/lucide-icons'
 import React, { useState } from 'react'
@@ -21,6 +22,12 @@ export function HomeScreen() {
   return (
     <YStack f={1} jc="center" ai="center" p="$4" space>
       <YStack space="$4" maw={600}>
+        <Card>
+          <Card.Header>Test</Card.Header>
+          <Card.Footer />
+          {/* any other components */}
+          <Card.Background />
+        </Card>
         <H1 ta="center">Welcome to Tamagui.</H1>
         <Paragraph ta="center">
           Here's a basic starter to show navigating from one screen to another. This screen uses the
